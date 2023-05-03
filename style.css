@@ -1,0 +1,120 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the body style */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header style */
+header {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-right: 2.5rem;
+    background-color: #ffa07a;
+    color: #fff;
+    /* background-image: https://4.bp.blogspot.com/-2VRNdggYAgQ/W1a4g3dvDTI/AAAAAAABNgE/nNiEgghSMTwYS0QgcNdQg6uCu_Ph38BjACLcBGAs/s800/bg_snow_diamond_dust.jpg; */
+}
+
+/* Reset button style */
+.headbutton {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.headbutton a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content style */
+#action {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 2rem
+}
+
+/* Form style */
+#action form {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+#action button {
+    font-size: 1.75rem;
+    height: 10rem;
+    width: 15rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.8em;
+    background-color: #87ceeb;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#action button i {
+    font-size: 3rem;
+    /* アイコンサイズを3remに変更 */
+    margin-bottom: 0.5rem;
+}
+
+
+#action button span {
+    display: block;
+    text-align: center;
+}
+
+
+/* Button hover effect */
+#action button:hover {
+    background-color: #00bfff;
+}
+
+
+.headbutton:hover {
+    background-color: #e53d27;
+}
+
+#celebration {
+    opacity: 0;
+    width: 65%;
+    transition: 3s;
+
+}
+
+/* #celebration p {
+    position:absolute;
+    top:
+} */
+
+#hairstyle img {
+    height: 4rem;
+    width: 5rem;
+    filter: invert(100%);
+}
