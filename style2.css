@@ -151,7 +151,7 @@ header {
 
 /* Form style */
 #action form {
-    display: block;
+    display: flex;
 }
 
 #action button {
