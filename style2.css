@@ -139,6 +139,10 @@ header {
     justify-content:flex-end;
 }
 
+h1 {
+    font-size: 1em;
+}
+
 /* Reset button style */
 .headbutton {
     font-size: 1rem;
@@ -160,7 +164,7 @@ header {
 
 #action button {
     font-size: 0.75rem;
-    height: 4rem;
+    height: 5rem;
     width: 15rem;
     padding: 1.5rem;
     display: flex;
@@ -176,10 +180,8 @@ header {
 }
 
 #action button i {
-    font-size: 1rem;
-    /* アイコンサイを3remに変更 */
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-
 
 }
