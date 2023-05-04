@@ -156,6 +156,7 @@ header {
 /* Form style */
 #action form {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #action button {
