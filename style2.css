@@ -132,10 +132,8 @@ header {
 
 @media (max-width:400px) {
     
-
-
     header {
-    font-size: 0.2rem;
+    font-size: 1em;
     padding: 0.5rem;
     padding-right: 0.5rem;
     justify-content:flex-end;
@@ -150,9 +148,8 @@ header {
 /* Main content style */
 #action {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width:100%;
+    margin: 1rem auto
 }
 
 /* Form style */
