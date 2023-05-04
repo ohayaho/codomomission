@@ -146,6 +146,8 @@ header {
 
 /* Main content style */
 #action {
+    display: flex;
+    justify-content: center;
     margin: 0.5rem 0.5rem
 }
 
