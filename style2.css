@@ -136,6 +136,7 @@ header {
     font-size: 1rem;
     padding: 0.5rem;
     padding-right: 0.5rem;
+    justify-content:flex-end;
 }
 
 /* Reset button style */
@@ -147,6 +148,7 @@ header {
 /* Main content style */
 #action {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0.5rem 0.5rem
 }
