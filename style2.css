@@ -175,8 +175,12 @@ ul,li{
     #action button {
         font-size: 0.55rem;
         height: 3rem;
-        width: 6rem;
+        width: 80%;
         padding: 0.2rem;
+    }
+    
+      #action button i{
+        font-size: 1rem
     }
 
     #action form {
