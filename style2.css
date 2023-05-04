@@ -100,41 +100,6 @@ header {
     background-color: #00bfff;
 }
 
-footer nav {
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 0.5rem; */
-    padding-right: 2.5rem;
-    background-color: #f0f8ff;
-    color: gray
-}
-
-footer nav ul {
-    flex: 1;
-}
-
-ul,li{
-    display: inline;
-
-}
-
-#CopyRight {
-    font-size: 0.8rem;
-    text-align: center;
-    margin: 1rem;
-}
-
-/* .legal-link {
-    text-align: end;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-.legal-link a {
-    text-decoration: none;
-} */
 
 #celebration {
     opacity: 0;
@@ -169,18 +134,19 @@ ul,li{
 @media (max-width:400px) {
 
     h1 {
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
 
     #action button {
         font-size: 0.55rem;
-        height: 3rem;
-        width: 80%;
+        height: 4rem;
+        width: 7rem;
         padding: 0.2rem;
     }
     
       #action button i{
-        font-size: 1rem
+        font-size: 0.5rem
+        margin-bottom: 0.2rem;
     }
 
     #action form {
