@@ -165,3 +165,23 @@ ul,li{
         gap: 3rem;
     }
 }
+
+@media (max-width:400px) {
+
+    h1 {
+        font-size: 0.5rem;
+    }
+
+    #action button {
+        font-size: 0.55rem;
+        height: 3rem;
+        width: 6rem;
+        padding: 0.2rem;
+    }
+
+    #action form {
+    margin-top: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+}
