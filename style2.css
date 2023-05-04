@@ -151,12 +151,11 @@ header {
 
 /* Main content style */
 #action {
-    margin: 0 auto
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width:100%;
-    margin: 0.5rem 0.5rem
+    margin: 0 auto
 }
 
 /* Form style */
