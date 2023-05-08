@@ -21,6 +21,7 @@ buttons.forEach(button => {
             if (clickedButtonsCount === buttons.length) {
                 actionDiv.style.display = "none";
                 celebrationDiv.style.opacity = "1";
+                celebrationDiv.style.position = "static";
                 celebrationDiv.style.display = "block";
                 celebrationDiv.style.margin = "1rem auto";
                 // celebrationDiv.justifycontent = "center";
@@ -38,17 +39,6 @@ document.querySelectorAll('button[name="action"]').forEach(button => {
     });
 });
 
-
 resetButton.addEventListener("click", () => {
-    buttons.forEach(button => {
-        button.style.backgroundImage = "";
-        // show <i class="fa-solid fa-socks"></i> icon
-        button.textContent = button.value;
-        button.classList.remove("flipped");
-        button.disabled = false;
-        actionDiv.style.display = "flex"
-    });
-
-    clickedButtonsCount = 0;
-    celebrationDiv.style.display = "none";
+    window.location.reload();
 });

@@ -10,25 +10,34 @@ body {
     font-family: "Arial", sans-serif;
     background-color: #f0f8ff;
     color: #333;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
 }
 
-/* Header style */
 header {
-    font-size: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    padding-right: 2.5rem;
-    background-color: #ffa07a;
     color: #fff;
-    /* background-image: https://4.bp.blogspot.com/-2VRNdggYAgQ/W1a4g3dvDTI/AAAAAAABNgE/nNiEgghSMTwYS0QgcNdQg6uCu_Ph38BjACLcBGAs/s800/bg_snow_diamond_dust.jpg; */
+    background-color: #ffa07a;
 }
 
-/* Reset button style */
+h1 {
+    font-size: clamp(16px, 16px + 3vw, 64px);
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
 .headbutton {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    font-size: max(16px, 2vw);
+    padding: 0.5rem 0.6vw;
+    margin: 0.1vw 0.3vw;
     border: none;
     border-radius: 0.5em;
     background-color: #ff6347;
@@ -54,13 +63,13 @@ header {
     display: grid;
     margin-top: 4rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 4vw;
 }
 
 #action button {
-    font-size: 1.75rem;
+    font-size: max(16px, 4vw);
     height: 10rem;
-    width: 15rem;
+    width: 30vw;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -80,38 +89,30 @@ header {
 
 #action button i {
     font-size: 3rem;
-    /* アイコンサイズを3remに変更 */
     margin-bottom: 0.5rem;
 }
-
 
 #action button span {
     display: block;
     text-align: center;
 }
 
-
 /* Button hover effect */
 #action button:hover {
     background-color: #00bfff;
 }
-
 
 .headbutton:hover {
     background-color: #e53d27;
 }
 
 #celebration {
+    position: fixed;
+    z-index: 1;
     opacity: 0;
     width: 65%;
     transition: 3s;
-
 }
-
-/* #celebration p {
-    position:absolute;
-    top:
-} */
 
 #hairstyle img {
     height: 4rem;

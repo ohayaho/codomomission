@@ -10,25 +10,34 @@ body {
     font-family: "Arial", sans-serif;
     background-color: #f0f8ff;
     color: #333;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
 }
 
-/* Header style */
 header {
-    font-size: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    padding-right: 2.5rem;
-    /* background-color: #ffa07a; */
     color: #fff;
     background-image: url(https://4.bp.blogspot.com/-2VRNdggYAgQ/W1a4g3dvDTI/AAAAAAABNgE/nNiEgghSMTwYS0QgcNdQg6uCu_Ph38BjACLcBGAs/s800/bg_snow_diamond_dust.jpg);
 }
 
-/* Reset button style */
+h1  {
+    font-size: clamp(16px, 16px + 3vw, 64px);
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
 .headbutton {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    font-size: max(16px, 2vw);
+    padding: 0.5rem 0.6vw;
+    margin: 0.1vw 0.3vw;
     border: none;
     border-radius: 0.5em;
     background-color: skyblue;
@@ -52,15 +61,15 @@ header {
 /* Form style */
 #action form {
     display: grid;
-    margin-top: 4rem;
+    margin-top: 6vw;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 4vw;
 }
 
 #action button {
-    font-size: 1.75rem;
+    font-size: max(16px, 4vw);
     height: 10rem;
-    width: 15rem;
+    width: 30vw;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -80,108 +89,24 @@ header {
 
 #action button i {
     font-size: 3rem;
-    /* アイコンサイズを3remに変更 */
     margin-bottom: 0.5rem;
 }
-
 
 #action button span {
     display: block;
     text-align: center;
 }
 
-
 /* Button hover effect */
-#action button:hover {
-    background-color: #00bfff;
-}
-
-.headbutton:hover {
+button:hover {
     background-color: #00bfff;
 }
 
 #celebration {
+    position:fixed;
+    z-index: 1;
+    /* margin: auto; */
     opacity: 0;
     width: 65%;
     transition: 3s;
-}
-
-@media (max-width:930px) {
-    .headbutton {
-        font-size: 1.0rem;
-    }
-}
-
-@media (max-width:840px) {
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    #action button {
-        font-size: 1.45rem;
-        height: 8rem;
-        width: 12rem;
-        padding: 1.2rem;
-    }
-
-    #action form {
-        gap: 3rem;
-    }
-}
-
-@media (max-width:400px) {
-    
-    header {
-    font-size: 1em;
-    padding: 0.5rem;
-    padding-right: 0.5rem;
-    justify-content:flex-end;
-}
-
-h1 {
-    font-size: 1em;
-}
-
-/* Reset button style */
-.headbutton {
-    font-size: 1rem;
-    padding: 0.2rem 0rem;
-}
-
-/* Main content style */
-#action {
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto
-}
-
-/* Form style */
-#action form {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#action button {
-    font-size: 1.5rem;
-    height: 6rem;
-    width: 15rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 0.8em;
-    
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#action button i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
 }
