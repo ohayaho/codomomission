@@ -6,7 +6,7 @@ let clickedButtonsCount = 0;
 
 buttons.forEach(button => {
     button.addEventListener("click", event => {
-        //event.preventDefault();
+        event.preventDefault();
 
         if (!button.classList.contains("flipped")) {
             const imageUrl = button.getAttribute("data-image-url");
