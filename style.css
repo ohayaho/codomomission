@@ -111,7 +111,7 @@ nav {
     z-index: 1;
     opacity: 0;
     width: 65%;
-    transition: 3s;
+    transition: 10s;
 }
 
 #hairstyle img {
