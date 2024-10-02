@@ -1,31 +1,68 @@
-<form action="">
-    <button id="wakeup" type="button" name="action" value="おきる" data-image-url="https://c02.castel.jp/800x/0/elsa-j60523.jpg">
-        <i class="fa-regular fa-sun"></i>
-        <span>おきる</span>
-    </button>
+<!DOCTYPE html>
+<html>
 
-    <button id="toilet" type="button" name="action" value="といれ" data-image-url="https://d1uzk9o9cg136f.cloudfront.net/f/16783100/rc/2020/05/14/efab54fd73cae32ff6401ce3249bfc85315f5ad2_xlarge.jpg">
-        <i class="fa-solid fa-toilet"></i>
-        <span>といれ</span>
-    </button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>できたボタン</title>
+    <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/4c670dacba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <button id="change" type="button" name="action" value="きがえ" data-image-url="https://c02.castel.jp/800x/0/elsa-j60523.jpg">
-        <i class="fa-solid fa-shirt"></i>
-        <span>きがえ</span>
-    </button>
+<body>
+    <header>
+        <h1>あさ</h1>
+        <nav>
+            <button class="headbutton"> <a href="mission_night.html">よるのミッション</a> </button>
+            <button class="headbutton" id="reset">りせっと</button>
+        </nav>
+    </header>
 
-    <button id="breakfast" type="button" name="action" value="ごはん" data-image-url="https://www.jigsaw.jp/img/goods/L/epo7738973304.jpg">
-        <i class="fa-solid fa-utensils"></i>
-        <span>ごはん</span>
-    </button>
+    <div id="action">
+        <form action="">
+            <button id="wakeup" name="action" value="おきる" data-image-url="https://c02.castel.jp/800x/0/elsa-j60523.jpg">
+                <i class="fa-regular fa-sun"></i>
+                <span>おきる</span>
+            </button>
 
-    <button id="socks" type="button" name="action" value="くつした" data-image-url="https://d1uzk9o9cg136f.cloudfront.net/f/16783100/rc/2020/05/14/efab54fd73cae32ff6401ce3249bfc85315f5ad2_xlarge.jpg">
-        <i class="fa-solid fa-socks"></i>
-        <span>くつした</span>
-    </button>
+            <button id="toilet" name="action" value="といれ"
+                data-image-url="https://d1uzk9o9cg136f.cloudfront.net/f/16783100/rc/2020/05/14/efab54fd73cae32ff6401ce3249bfc85315f5ad2_xlarge.jpg">
+                <i class="fa-solid fa-toilet"></i>
+                <span>といれ</span>
+            </button>
 
-    <button id="hairstyle" type="button" name="action" value="かみのけ" data-image-url="https://d1uzk9o9cg136f.cloudfront.net/f/16783100/rc/2020/05/14/efab54fd73cae32ff6401ce3249bfc85315f5ad2_xlarge.jpg">
-        <img src="hair.png" alt="髪型">
-        <span>かみのけ</span>
-    </button>
-</form>
+            <button id="change" name="action" value="きがえ" data-image-url="https://c02.castel.jp/800x/0/elsa-j60523.jpg">
+                <i class="fa-solid fa-shirt"></i>
+                <span>きがえ</span>
+            </button>
+
+            <button id="breakfast" name="action" value="ごはん"
+                data-image-url="https://www.jigsaw.jp/img/goods/L/epo7738973304.jpg">
+                <i class="fa-solid fa-utensils"></i>
+                <span>ごはん</span>
+            </button>
+
+            <button id="socks" name="action" value="くつした"
+                data-image-url="https://d1uzk9o9cg136f.cloudfront.net/f/16783100/rc/2020/05/14/efab54fd73cae32ff6401ce3249bfc85315f5ad2_xlarge.jpg">
+                <i class="fa-solid fa-socks"></i>
+                <span>くつした</span>
+            </button>
+
+            <button id="hairstyle" name="action" value="かみのけ"
+                data-image-url="https://d1uzk9o9cg136f.cloudfront.net/f/16783100/rc/2020/05/14/efab54fd73cae32ff6401ce3249bfc85315f5ad2_xlarge.jpg">
+                <img src="hair.png" alt="髪型">
+                <span>かみのけ</span>
+            </button>
+        </form>
+    </div>
+
+    <div id="celebration">
+        <img src="elsa.png" alt="クラッカー" />
+    </div>
+
+    <script src="codomomission.js"></script>
+</body>
+
+</html>
