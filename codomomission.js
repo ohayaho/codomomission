@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (clickedButtons.size === buttonIds.length) {
                 // 全てのボタンが押された場合、#celebration を表示
                 const celebrationImage = document.getElementById('celebration');
-                celebrationImage.style.opacity = '1'; // 表示する
+                celebrationImage.style.display = 'block'; // 表示
+                celebrationImage.style.opacity = '1'; // フェードイン
             }
         });
     });
@@ -25,6 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
     resetButton.addEventListener('click', function () {
         clickedButtons.clear(); // 押されたボタンの記録をリセット
         const celebrationImage = document.getElementById('celebration');
-        celebrationImage.style.opacity = '0'; // 画像を非表示
+        celebrationImage.style.display = 'none'; // 完全に非表示
     });
 });
