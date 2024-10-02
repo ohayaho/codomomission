@@ -107,14 +107,17 @@ nav {
 }
 
 #celebration {
-   position: fixed;
+  position: fixed;
 z-index: 1;
-opacity: 0; /* 表示されるように変更 */
+opacity: 0;
 width: 65%;
+max-width: 100%; /* 画面幅を超えないように制限 */
+max-height: 100%; /* 画面高さを超えないように制限 */
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
 transition: opacity 10s;
+
 
 }
 
